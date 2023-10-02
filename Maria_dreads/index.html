@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Плетение кос &ndash; Мария Платонова</title>
+	<!-- Подключаем сначала бутстрап, потом свои стили, чтобы свои были в приоритете -->
+	<link rel="stylesheet" href="bs/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+
+			<!-- Навигационная панель, при ширине экрана 768px меняется на "меню-бургер" -->
+			<nav class="navbar navbar-expand-md navbar-light" id="menu">
+				<a class="navbar-brand" href="#">
+					<h3 class="h4 mb-0">Мария Платонова</h3>
+					<small class="muted  color-2">Санкт-Петербург</small>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="nav__menu collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-center" href="#about">Услуги</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-center" href="#questions">Вопросы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-center" href="#examples">Примеры</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-center" href="#contacts">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Вступление с кнопкой для связи-->
+		<section class="intro pt-md-4 pb-md-5 pt-md-5">
+			<div class="container">
+				<div class="row">
+
+					<h1 class="color-1 col-6 col-sm-8 offset-5 offset-sm-3 text-end text-md-center mb-4">
+						Косы и дреды
+					</h1>
+					<div class="color-1 h2 col-6 col-sm-8 offset-5 offset-sm-3 text-end text-md-center mb-md-4">
+						<p class="mb-4">Плетение и коррекция</p>
+						<p>Комплекты на заказ</p>
+					</div>
+					<div class="col-6 col-sm-8 offset-5 offset-md-3 text-end text-md-center pb-3">
+
+						<!-- Кнопка для связи, открывающая модальное окно -->
+						<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<span class="bg-color">Узнать подробности</span>
+						</button>
+
+						<!-- Модальное окно для связи -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Позвоните мне:
+										</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="mb-3">
+											<!-- Делаем кликабельный телефон -->
+											<h6>Мария <a class="telefon" href="tel:+79817777777">+7-981-777-77-77</a>
+											</h6>
+											<label for="exampleFormControlTextarea1" class="form-label">Или напишите свой вопрос
+												тут:</label>
+											<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-color-2" data-bs-dismiss="modal">Закрыть</button>
+										<button type="button" class="btn btn-danger">Отправить вопрос</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<!-- Главный раздел -->
+	<main class="pb-3 pb-md-5">
+		<!-- Секция с предложениями -->
+		<section class="about" id="about">
+			<div class="container">
+				<h3 class="text-center pt-2 pb-2 pt-md-4 pb-md-4"><a href="#menu" class="main-anchor">Что я плету</a></h3>
+
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 px-5 text-center">
+					<!-- Карточка 1 -->
+					<div class="col">
+						<div class="card">
+							<!-- 1 картинка-кнопка, открывающая модальное окно -->
+							<a class="modal_example" type="button" data-bs-toggle="modal" data-bs-target="#modal">
+								<img src="./img/natur-dreads-1.jpg" class="card-img-top" alt="...">
+							</a>
+							<!-- 1 модальное окно -->
+							<div class="modal fade" id="modal" data-bs-keyboard="false" tabindex="-1"
+								aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<div class="modal-body">
+											<!-- карусель при открытии модального окна -->
+											<div id="modalCarousel-1" class="carousel slide" data-bs-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="./img/natur-dreads-1.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/natur-dreads-2.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/natur-dreads-3.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<button class="carousel-control-prev" type="button"
+													data-bs-target="#modalCarousel-1" data-bs-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button class="carousel-control-next" type="button"
+													data-bs-target="#modalCarousel-1" data-bs-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 1 акордеон-карточка -->
+							<div class="card-body">
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+												Натуральные дреды
+											</button>
+										</h2>
+										<div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body text-start">
+												Делаются из ваших волос с помощью расчески и вязального крючка. Никаких стайлингов и
+												спреев. Есть смысл делать, если планируете ходить с дредами продолжительное время.
+												Возможно расплетение. Минимальная длина волос- 10 см. Каждые 1,5-2 месяца необходима
+												коррекция.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Карточка 2 -->
+					<div class="col">
+						<div class="card">
+							<!-- 2 картинка-кнопка, открывающая модальное окно -->
+							<a class="modal_example" type="button" data-bs-toggle="modal" data-bs-target="#modal2">
+								<img src="./img/de-dreads-1.jpg" class="card-img-top" alt="...">
+							</a>
+							<!-- 2 модальное окно -->
+							<div class="modal fade" id="modal2" data-bs-keyboard="false" tabindex="-1"
+								aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<div class="modal-body">
+											<!-- Не забываем менять id карусели при новой вставке! -->
+											<div id="modalCarousel-2" class="carousel slide" data-bs-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="./img/de-dreads-1.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/de-dreads-2.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/de-dreads-3.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/de-dreads-4.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<button class="carousel-control-prev" type="button"
+													data-bs-target="#modalCarousel-2" data-bs-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button class="carousel-control-next" type="button"
+													data-bs-target="#modalCarousel-2" data-bs-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<!-- 2 акордеон-карточка -->
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button collapsed type=" button" data-bs-toggle="collapse"
+												data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+												DE и SE дреды и косы
+											</button>
+										</h2>
+										<div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body text-start">
+												Это заранее подготовленный мастером комплект кос или дред ( или смешанный комплект),
+												который приплетается к волосам сравнительно быстро ( обычно ок. 3х часов). Такие
+												комплекты можно использовать несколько раз. Де дреды безопасны, не травмируют ваши
+												волосы.
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- Карточка 3 -->
+					<div class="col">
+						<div class="card">
+							<!-- 3 картинка-кнопка, открывающая модальное окно -->
+							<a class="modal_example" type="button" data-bs-toggle="modal" data-bs-target="#modal3">
+								<img src="./img/afro-1.jpg" class="card-img-top" alt="...">
+							</a>
+							<!-- 3 модальное окно -->
+							<div class="modal fade" id="modal3" data-bs-keyboard="false" tabindex="-1"
+								aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<div class="modal-body">
+											<!-- Не забываем менять id карусели при новой вставке! -->
+											<div id="modalCarousel-3" class="carousel slide" data-bs-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="./img/afro-1.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/afro-2.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/afro-3.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<button class="carousel-control-prev" type="button"
+													data-bs-target="#modalCarousel-3" data-bs-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button class="carousel-control-next" type="button"
+													data-bs-target="#modalCarousel-3" data-bs-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<!-- 3 акордеон-карточка -->
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+												Афрокосы
+											</button>
+										</h2>
+										<div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body text-start">
+												Классическое плетение, когда искусственный волос вплетается вместе со своими ( как
+												лента в косе) от самого корня. Таким образом формируется небольшой «узелок»у
+												основания. Срок носки- 1,5-2 месяца. Искусственный волос повторному использованию не
+												подлежит.
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- Карточка 4 -->
+					<div class="col">
+						<div class="card">
+							<!-- 4 картинка-кнопка, открывающая модальное окно -->
+							<a class="modal_example" type="button" data-bs-toggle="modal" data-bs-target="#modal4">
+								<img src="./img/complect-4.jpg" class="card-img-top" alt="...">
+							</a>
+							<!-- 4 модальное окно -->
+							<div class="modal fade" id="modal4" data-bs-keyboard="false" tabindex="-1"
+								aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<!--4 карусель при открытии модального окна -->
+											<div id="modalCarousel-4" class="carousel slide" data-bs-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="./img/complect-3.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/complect-2.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/complect-1.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="./img/complect-4.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<button class="carousel-control-prev" type="button"
+													data-bs-target="#modalCarousel-4" data-bs-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Previous</span>
+												</button>
+												<button class="carousel-control-next" type="button"
+													data-bs-target="#modalCarousel-4" data-bs-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="visually-hidden">Next</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<!-- 4 акордеон-карточка -->
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+												Изготовление комплектов
+											</button>
+										</h2>
+										<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body text-start">
+												Здесь представлены комплекты для вплетения .. также вы можете заказать свой
+												особенный вариант или придумать такой вместе со мной.
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Секция с вопросами -->
+		<section class="questions" id="questions">
+			<div class="container">
+				<h3 class="text-center pt-2 pb-2 pt-md-4 pb-md-4">
+					<a href="#menu" class="main-anchor">Часто задаваемые вопросы</a>
+				</h3>
+
+				<div class="accordion">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+								aria-controls="panelsStayOpen-collapseOne">
+								Я испорчу себе волосы?
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+							aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								Вовсе нет. Существуют безопасные дреды- они вплетаются в волосы с помощью нитки и носятся до 2х
+								месяцев. Также все виды кос безопасны для волос.
+							</div>
+						</div>
+					</div>
+					<!-- не забываем при добавлении итемов менять порядковые классы, отвечающие за взаимодействие headingFour и collapseFour -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseTwo">
+								Такие прически нельзя мыть?
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingTwo">
+							<div class="accordion-body">
+								Очень даже можно и нужно! Просто голову нет необходимости мыть так часто, как вы это обычно
+								делаете. Раза в неделю обычно вполне достаточно.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseThree">
+								Я вырву себе все волосы, когда буду расплетать?
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingThree">
+							<div class="accordion-body">
+								Часть волос, конечно, останется на полу, но это те волосы, которые выпадают у нас каждый день, и
+								они просто оставались в прическе все это время. При бережном снятии травмирование волос
+								минимально.
+							</div>
+						</div>
+					</div>
+					<!-- не забываем при добавлении итемов менять порядковые классы, отвечающие за взаимодействие headingFour и collapseFour -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseFour">
+								Дреды из своих волос придется отрезать?
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingFour">
+							<div class="accordion-body">
+								Их также можно аккуратно расплести. На это потребуется больше времени и терпения.
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+								aria-controls="panelsStayOpen-collapseFive">
+								Сколько можно ходить с этими прическами?
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+							aria-labelledby="panelsStayOpen-headingFive">
+							<div class="accordion-body">
+								Для разных вид кос и безопасных дред срок носки составляет до 2х месяцев. Потом корни волос
+								очень сильно отрастают и прическа смотрится не эстетично. Натуральные дреды ( из своих волос)
+								можно носить всю жизнь, только периодически подплетать и корректировать.
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Секция с примерами -->
+		<section class="examples" id="examples">
+			<div class="container">
+				<h3 class="text-center pt-2 pb-2 pt-md-4 pb-md-4">
+					<a href="#menu" class="main-anchor">Примеры работ</a>
+				</h3>
+				<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./img/example-6.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>DE дреды</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./img/example-2.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>DE дреды и косы</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./img/afro-2.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>Афрокосы (Box-braids)</h5>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./img/example-5.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>Натуральные дреды с удлиннением</h5>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Футер с контактами и модальным окном для связи -->
+	<footer class="contacts pb-3" id="contacts">
+		<div class="container">
+			<h3 class="text-center pt-2 pb-2 pt-md-3 pb-md-2">
+				<a href="#menu" class="main-anchor">Контакты</a>
+			</h3>
+
+			<!-- Е-мэйл -->
+			<div class="contact-field row">
+				<div class="contact-field__logo col-4 text-center">
+					<a href="mailto:myemail@gmail.com">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							class="bi bi-envelope" viewBox="0 0 16 16">
+							<path
+								d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+						</svg>
+					</a>
+				</div>
+				<div class="contact-field__text col-8 text-center bg-light">
+					<!-- Делаем кликабельный е-мэйл -->
+					<p><a class="link-contacts" href="mailto:myemail@gmail.com">myemail@gmail.com</a></p>
+				</div>
+			</div>
+
+			<!-- Телефон -->
+			<div class="contact-field row">
+				<div class="contact-field__logo col-4 text-center">
+					<a href="tel:+79817777777">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							class="bi bi-telephone" viewBox="0 0 16 16">
+							<path
+								d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+						</svg>
+					</a>
+				</div>
+				<div class="contact-field__text col-8 text-center bg-light">
+					<!-- Делаем кликабельный телефон -->
+					<p><a class="link-contacts" href="tel:+79817777777">+7-981-777-77-77</a></p>
+				</div>
+			</div>
+
+			<!-- Контакт -->
+			<div class="contact-field row">
+				<div class="contact-field__logo vk col-4 text-center">
+					<a href="www" target="_blank">
+						<i class="fab fa-vk"></i>
+					</a>
+				</div>
+				<div class="contact-field__text col-8 text-center bg-light">
+					<p><a class="link-contacts" href="#">@mariagella</a></p>
+				</div>
+			</div>
+
+			<!-- Инст -->
+			<div class="contact-field row">
+				<div class="contact-field__logo col-4 text-center">
+					<a href="www" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							class="bi bi-instagram" viewBox="0 0 16 16">
+							<path
+								d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+						</svg>
+					</a>
+				</div>
+				<div class="contact-field__text col-8 text-center bg-light">
+					<p><a class="link-contacts" href="#">@mariaplatonova_via</a></p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Кнопка для связи (тело модального окна в секции Intro - Вступление) -->
+		<div class="callme text-center pb-2">
+			<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<span class="bg-color">Связаться со мной</span>
+			</button>
+		</div>
+		<h5 class="color-1 text-center mb-0 pt-2">Мария Платонова</h5>
+		<h5 class="muted text-center color-2">Санкт-Петербург</h5>
+
+	</footer>
+</body>
+
+<script src="bs/bootstrap.bundle.js"></script>
+
+</html>
